@@ -53,7 +53,7 @@ public class HorizontalLoadMoreView extends FrameLayout {
     private AnimView footerView;
     private View moreView;
 
-    private TextView moreText;//加载更多文字
+    private VerticalLayoutTextView  moreText;//加载更多文字
     private ImageView arrowIv;//可显示拖拽方向图标
 
     private ValueAnimator backAnimator;
@@ -236,7 +236,7 @@ public class HorizontalLoadMoreView extends FrameLayout {
         moreView = LayoutInflater.from(this.getContext()).inflate(R.layout.item_load_more, this, false);
         moreView.setLayoutParams(params);
         moreText = moreView.findViewById(R.id.tv_more_text);
-        moreText.setTextSize(TypedValue.COMPLEX_UNIT_PX, moreViewTextSize);
+        moreText.setTextSize( moreViewTextSize);
         moreText.setTextColor(moreViewTextColor);
 
         addViewInternal(moreView);
@@ -601,9 +601,6 @@ public class HorizontalLoadMoreView extends FrameLayout {
     /**
      * 获取嵌套滑动的轴
      *
-     * @see ViewCompat.SCROLL_AXIS_HORIZONTAL 水平
-     * @see ViewCompat.SCROLL_AXIS_VERTICAL 垂直
-     * @see ViewCompat.SCROLL_AXIS_NONE 都支持
      */
     public int getNestedScrollAxes() {
         return SCROLL_AXIS_HORIZONTAL;

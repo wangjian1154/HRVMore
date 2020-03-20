@@ -6,13 +6,12 @@
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
-    <com.example.hrvmore.VerticalLayoutTextView
-        android:id="@+id/tv_more_text"
+    <TextView
+        android:id="@+id/tvMoreText"
         android:layout_width="12dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="6dp"
-        app:text="Hello 你好"
-        app:textSize="12sp"
+        android:textSize="12sp"
         android:textColor="@android:color/black" />
 
 

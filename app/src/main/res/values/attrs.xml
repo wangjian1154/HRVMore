@@ -15,4 +15,37 @@
         <attr name="moreViewTextColor" format="color" />
         <attr name="moreViewMoveMaxDimen" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="VerticalLayoutTextView">
+        <attr name="needSepLine" format="boolean" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="needCollipseEnd" format="boolean" />
+        <attr name="normalCharPadding" format="dimension" />
+        <attr name="customMaxHeight" format="dimension" />
+        <attr name="maxLines" format="integer" />
+        <attr name="normalCharPaddingTop" format="dimension" />
+        <attr name="needLeftLine" format="boolean" />
+        <attr name="lineSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_shadowed" format="boolean"/>
+        <attr name="sl_shadow_distance" format="dimension"/>
+        <attr name="sl_shadow_angle" format="integer"/>
+        <attr name="sl_shadow_radius" format="dimension"/>
+        <attr name="sl_shadow_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShadowRelativeLayout">
+        <attr format="color" name="shadow_color"/>
+        <attr format="dimension" name="shadow_radius"/>
+        <attr format="dimension" name="shadow_blur"/>
+        <attr format="dimension" name="shadow_dx"/>
+        <attr format="dimension" name="shadow_dy"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullLeftToRefreshLayout">
+        <attr name="footer_bgColor" format="dimension"/>
+    </declare-styleable>
 </resources>
